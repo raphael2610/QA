@@ -77,4 +77,10 @@ public class loginDefinition {
         login.validateLoginInvalid();
         evidencias();
     }
+
+    @Then("mostrar mensaje de registro fallido")
+    public void mostrarMensajeDeRegistroFallido() throws IOException {
+        register.validateRegisterNull();
+        evidencias();
+    }
 }
