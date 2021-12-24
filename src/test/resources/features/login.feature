@@ -14,3 +14,8 @@ Feature: Flujo de ingreso
     When Ingresa las credenciales "cupe.com" y "2021"
     Then mostrar logueo fallido
 
+  @test02
+  Scenario: Ingreso y logueo en la web con campos vacios
+    Given Validar que la web este operativa
+    When Ingresa las credenciales "" y ""
+    Then mostrar mensaje logueo fallido

@@ -71,4 +71,10 @@ public class loginDefinition {
         login.validateLoginInvalid();
         evidencias();
     }
+
+    @Then("mostrar mensaje logueo fallido")
+    public void mostrarMensajeLogueoFallido() throws IOException {
+        login.validateLoginInvalid();
+        evidencias();
+    }
 }
